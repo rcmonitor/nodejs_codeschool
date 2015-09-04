@@ -1,0 +1,31 @@
+{
+  "name": "node_js_codeschool",
+  "version": "1.0.0",
+  "homepage": "https://github.com/rcmonitor/nodejs_codeschool",
+  "description": "test project to learn testing in nodejs",
+  "main": "index.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "learn",
+    "test"
+  ],
+  "authors": [
+    "rcmonitor"
+  ],
+  "license": "ISC",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mocha": "~2.1.0",
+    "chai": "~1.10.0",
+    "sinon": "~1.12.2"
+  }
+}
