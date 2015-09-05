@@ -15,9 +15,9 @@ describe('event-related tests', function(){
 
 		it('should fire start event', function(fCallback){
 
-			var oEmitter = new TehEmitter(fCallback);
+			var oEmitter = new TehEmitter();
 
-//			oEmitter.emit('start', fCallback);
+			oEmitter.emit('start', fCallback);
 
 //			oEmitter.start();
 //			TehEmitter.emit('start', fCallback);

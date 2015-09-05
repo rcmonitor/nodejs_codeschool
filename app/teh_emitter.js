@@ -7,26 +7,33 @@ var util = require('util');
 
 util.inherits(TehEmitter, EventEmitter);
 
-function TehEmitter(fCallback){
+function TehEmitter(){
 
 	EventEmitter.call(this);
 
-	this.callback = fCallback;
+	this.on('start', onStart);
+	//this.callback = fCallback;
 
-	this.emit('start', this.callback);
+
+
+	//this.emit('start', this.callback);
 }
 
 
-/**
- * does not append listeners to prototype
- */
-TehEmitter.prototype.on('start', function (fCallback) {
-
+function onStart(fCallback){
 	console.log('callback fired');
 	console.log(fCallback);
 
 	fCallback();
-});
+}
+
+//TehEmitter.prototype.on('start', function (fCallback) {
+//
+//	console.log('callback fired');
+//	console.log(fCallback);
+//
+//	fCallback();
+//});
 
 
 /**
